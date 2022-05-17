@@ -18,4 +18,4 @@
 
 include ':app'
 rootProject.name = "WonderScan"
-include ':openCVLibrary344'
+//include ':openCVLibrary344'
