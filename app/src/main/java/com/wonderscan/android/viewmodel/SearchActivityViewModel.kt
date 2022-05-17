@@ -44,7 +44,7 @@ class SearchActivityViewModelFactory(
     private val documentDao: DocumentDao,
     private val frameDao: FrameDao
 ) : ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         @Suppress("UNCHECKED_CAST")
         return SearchActivityViewModel(documentDao, frameDao) as T
     }

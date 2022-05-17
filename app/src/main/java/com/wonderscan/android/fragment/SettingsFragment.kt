@@ -85,7 +85,7 @@ open class SettingsFragment : PreferenceFragmentCompat(), OnSharedPreferenceChan
     }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {}
-    override fun onPreferenceChange(preference: Preference?, newValue: Any?): Boolean {
+    override fun onPreferenceChange(preference: Preference, newValue: Any?): Boolean {
         return false
     }
 

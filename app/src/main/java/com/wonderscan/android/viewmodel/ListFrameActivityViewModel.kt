@@ -138,7 +138,7 @@ class ListFrameActivityViewModelFactory(
     private val frameDao: FrameDao,
     private val docId: String
 ) : ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         @Suppress("UNCHECKED_CAST")
         return ListFrameActivityViewModel(application, documentDao, frameDao, docId) as T
     }

@@ -43,7 +43,9 @@ class CropActivityViewModelFactory(
 ) : ViewModelProvider.Factory {
 
     @Suppress("UNCHECKED_CAST")
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return CropActivityViewModel(application, frameDao, frameId) as T
     }
+
+
 }

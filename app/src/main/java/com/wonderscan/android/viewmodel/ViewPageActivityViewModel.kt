@@ -57,7 +57,7 @@ class ViewPageActivityViewModelFactory(
     private val frameDao: FrameDao,
     private val docId: String
 ) : ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         @Suppress("UNCHECKED_CAST")
         return ViewPageActivityViewModel(documentDao, frameDao, docId) as T
     }
